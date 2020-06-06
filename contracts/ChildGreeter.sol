@@ -16,7 +16,6 @@ abstract contract ChildGreeter is Greeter {
     // string public greeting;
 
     constructor(string memory _greeting) public {
-        console.log("Deploying a Child Greeter with greeting:", _greeting);
         greeting = _greeting;
     }
 

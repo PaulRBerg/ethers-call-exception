@@ -2,13 +2,10 @@
 
 pragma solidity ^0.6.9;
 
-import "@nomiclabs/buidler/console.sol";
-
 contract Greeter {
     string public greeting;
 
     constructor(string memory _greeting) public {
-        console.log("Deploying a Greeter with greeting:", _greeting);
         greeting = _greeting;
     }
 
@@ -21,7 +18,6 @@ contract Greeter {
     }
 
     function setGreeting(string memory _greeting) external virtual {
-        console.log("Changing greeting from '%s' to '%s'", greeting, _greeting);
         greeting = _greeting;
     }
 }
