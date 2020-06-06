@@ -1,0 +1,47 @@
+{
+  "name": "@paulrberg/ethers-call-exception",
+  "description": "Dummy project that reproduces the call-exception bug of ethers.js",
+  "version": "1.0.0",
+  "author": {
+    "name": "Paul Razvan Berg",
+    "url": "https://paulrberg.com"
+  },
+  "bugs": {
+    "url": "https://github.com/paulrberg/ethers-call-exception/issues"
+  },
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.3.6",
+    "@nomiclabs/buidler-ethers": "^1.3.3",
+    "@nomiclabs/buidler-waffle": "^1.3.4",
+    "@typechain/ethers-v4": "^1.0.0",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^2.5.1",
+    "ethers": "^4.0.47",
+    "mocha": "^7.2.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-solidity": "^1.0.0-alpha.54",
+    "shx": "^0.3.2",
+    "solc": "0.6.9",
+    "ts-node": "^8.10.2",
+    "typechain": "^2.0.0",
+    "typescript": "^3.9.5"
+  },
+  "homepage": "https://github.com/paulrberg/ethers-call-exception#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulrberg/ethers-call-exception.git"
+  },
+  "resolutions": {
+    "solc": "0.6.9"
+  },
+  "scripts": {
+    "build": "yarn run compile && yarn run typechain",
+    "clean": "shx rm -rf ./artifacts ./cache ./typechain",
+    "compile": "buidler compile",
+    "test": "buidler test",
+    "typechain": "typechain --outDir typechain --target ethers-v4 'artifacts/*.json'"
+  }
+}
