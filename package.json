@@ -17,6 +17,7 @@
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
     "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
     "ethereum-waffle": "^2.5.1",
     "ethers": "^4.0.47",
     "mocha": "^7.2.0",
