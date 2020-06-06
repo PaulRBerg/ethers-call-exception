@@ -1,5 +1,6 @@
 # folders
 build/
+cache/
 dist/
 lib/
 node_modules/
